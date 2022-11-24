@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  hardhat:
+    image: aleksn7/hardhat:latest
+    ports:
+      - "127.0.0.1:8545:8545"
+      - "127.0.0.1:8546:8546"
+    volumes:
+      - ./devproj:/home/devproj
+    stdin_open: true
+    tty: true
